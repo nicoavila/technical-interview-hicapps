@@ -69,7 +69,7 @@ Que retornan el siguiente payload
 Crea una pequeña aplicación en [Codepen](https://codepen.io) que muestre todos los **TODOS** de un **USER** en particular al hacer click en un botón.
 Se adjunta una imagen del funcionamiento esperado:
 
-<img src="https://github.com/nicoavila/technical-interview-hicapps/expected.gif">
+<img src="https://github.com/nicoavila/technical-interview-hicapps/blob/master/expected.gif">
 ![animacion](https://placehold.it/640x480)
 
 ### Requerimientos
