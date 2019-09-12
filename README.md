@@ -70,12 +70,11 @@ Crea una pequeña aplicación en [Codepen](https://codepen.io) que muestre todos
 Se adjunta una imagen del funcionamiento esperado:
 
 <img src="https://github.com/nicoavila/technical-interview-hicapps/blob/master/expected.gif">
-![animacion](https://placehold.it/640x480)
 
 ### Requerimientos
 * Implementa una clase `Fetcher`. Debe aceptar en su constructor una `string` correspondiente al endpoint que quiero consultar. La clase debe implementar un método `callUrl()` que permita realizar una llamada a una API externa usando `fetch()`. Este método debe devolver una promesa.
 * Utiliza dos instancias de `Fetcher` para realizar las llamadas a las API.
-* Implementa una clase `DOMWritter` que acepte un resultado de una selección al DOM utilizando `querySelector()`. La clase debe implementar un método `createUserTodo()` que acepte como argumentos un `string` correspondiente al ID del usuario y un `Array` de objetos (cada uno de esos objetos corresponde a la lista de **TODOS** del **USER** en particular).
+* Implementa una clase `DOMWritter` que acepte un resultado de una selección al DOM utilizando `querySelector()`. La clase debe implementar un método `createUserTodo()` que acepte como argumentos un `string` correspondiente al ID del usuario y un `Array` de objetos (cada uno de esos objetos corresponde a la lista de **TODOS** del **USER** en particular). Este método debe crear los elementos necesarios para mostrar los **TODOS** del **USER**.
 * Utiliza una instancia de `DOMWritter` para realizar las operaciones de escritura en el DOM.
 * Implementa un `eventListener` al evento `click` del botón. Utilizando `Promise.all()` debes esperar la llamada de ambos endpoints, de lo contrario muestra un mensaje con `console.error`. Cuando ambas promesas se resuelvan, debes identificar todos los **TODOS** de un **USER** utilizando `map()` y `filter()`. Cuando hayas terminado de identificar todos los **TODOS** de un **USER** utiliza el método `createUserTodo()` para mostrar esa información en el DOM.
 
