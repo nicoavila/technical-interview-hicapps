@@ -22,7 +22,7 @@ Dados los siguientes endpoints:
 Que retornan el siguiente payload
 
 + Users (Array de Objetos)
-```json
+```
 {
     [
         {
@@ -53,7 +53,7 @@ Que retornan el siguiente payload
 ```
 
 + Todos (Array de Objetos)
-```json
+```
 {
     [
         {
@@ -69,10 +69,11 @@ Que retornan el siguiente payload
 Crea una pequeña aplicación en [Codepen](https://codepen.io) que muestre todos los **TODOS** de un **USER** en particular al hacer click en un botón.
 Se adjunta una imagen del funcionamiento esperado:
 
+<img src="https://github.com/nicoavila/technical-interview-hicapps/expected.gif">
 ![animacion](https://placehold.it/640x480)
 
 ### Requerimientos
-* Implementa una clase `Fetcher`. Debe aceptar en su constructor una `string` correspondiente al endpoint que quiero consultar. La clase debe implmentar un método `callUrl()` que permita realizar una llamada a una API externa usando `fetch()`. Este método debe devolver una promesa.
+* Implementa una clase `Fetcher`. Debe aceptar en su constructor una `string` correspondiente al endpoint que quiero consultar. La clase debe implementar un método `callUrl()` que permita realizar una llamada a una API externa usando `fetch()`. Este método debe devolver una promesa.
 * Utiliza dos instancias de `Fetcher` para realizar las llamadas a las API.
 * Implementa una clase `DOMWritter` que acepte un resultado de una selección al DOM utilizando `querySelector()`. La clase debe implementar un método `createUserTodo()` que acepte como argumentos un `string` correspondiente al ID del usuario y un `Array` de objetos (cada uno de esos objetos corresponde a la lista de **TODOS** del **USER** en particular).
 * Utiliza una instancia de `DOMWritter` para realizar las operaciones de escritura en el DOM.
